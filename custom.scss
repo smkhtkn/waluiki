@@ -1,0 +1,99 @@
+/* e-Ukraine Head */
+@font-face {
+    font-family:'e-Ukraine Head';
+    font-style: normal;
+	font-weight: normal;
+	font-display: swap;
+	src: local('e-Ukraine Head Regular'), local('e-Ukraine Head Regular'),
+	    url('fonts/e-Ukraine Head Regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/e-Ukraine Head Regular.woff2') format('woff2'),
+		url('fonts/e-Ukraine Head Regular.woff') format('woff'),
+		url('fonts/e-Ukraine Head Regular.ttf') format('truetype'),
+		url('fonts/e-Ukraine Head Regular.svg#e-Ukraine Head Regular') format('svg');
+}
+
+/* e-Ukraine UltraLight */
+@font-face {
+    font-family:'e-Ukraine UltraLight';
+    font-style: normal;
+	font-weight: normal;
+	font-display: swap;
+	src: local('e-Ukraine UltraLight'), local('e-Ukraine UltraLight'),
+	    url('fonts/e-Ukraine UltraLight.eot?#iefix') format('embedded-opentype'),
+		url('fonts/e-Ukraine UltraLight.woff2') format('woff2'),
+		url('fonts/e-Ukraine UltraLight.woff') format('woff'),
+		url('fonts/e-Ukraine UltraLight.ttf') format('truetype'),
+		url('fonts/e-Ukraine UltraLight.svg#e-Ukraine UltraLight') format('svg');
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "e-Ukraine Head", sans-serif;
+  font-weight: 400;
+}
+
+.g-container {
+  width: 80rem;
+}
+
+/* Левая часть */
+
+#g-sidebar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 13vw; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  /*top: 0; Stay at the top */
+  padding-top: 1.5rem;
+}
+
+#logo .g-content {
+    padding: 0 0.938rem 0 0.938rem;
+}
+
+#search_arkh .g-content {
+    padding: 0;
+}
+
+#menu_arkhivnyk .g-content {
+    padding: 0;
+    margin: 0 0.625rem;
+}
+
+.g-main-nav .g-toplevel li {
+	display: block;
+}
+
+.g-menu-item-container {
+  padding: 0 !important;
+  margin: 0.3rem 0;
+  font-family: "e-Ukraine Head", sans-serif;
+  color: black;
+}
+
+.gantry-logo img {
+  width: 100%;
+}
+
+.search-form input.search-field {
+  height: 32px;
+  padding-top: 0;
+  color: #666666;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: 'e-Ukraine Head';
+  font-size: .843rem;
+  width: 10.4vw;
+  border: none;
+}
+
+.search-form {
+    display: flex;
+    border: 1px solid #dddddd;
+    button {
+      background-color: transparent;
+      border: none;
+      color: black;
+      }
+}
+
+/* Конец левой части */

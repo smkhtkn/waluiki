@@ -1,0 +1,24 @@
+<video id="plyr"
+        controls
+        crossorigin
+        playsinline
+		aria-label='{{ .Get "label"}}' 
+		poster='{{ .Get "poster"}}' >
+
+        {{ with .Get "mp4" }}<source
+            src="{{ . }}"
+            type="video/mp4"
+        />{{ end }}
+
+        {{ with .Get "webm" }}<source
+            src="{{ . }}"
+            type="video/webm"
+        />{{ end }}
+		
+		{{ with .Get "mp3" }}<source
+            src="{{ . }}"
+            type="audio/mpeg"
+        />{{ end }}
+</video>
+
+<script> plyr.setup("#plyr"); </script>

@@ -1,0 +1,6 @@
+{{ if default true .Site.Params.BookSearch }}
+<form class="search-container" action="https://waluiki.ru/search/?q=" method="get" target="_blank" accept-charset="utf-8">
+	<input type="search" name="q" id="search-bar" placeholder="Поиск по сайту" value=""/>
+		<button class="fas fa-search" type="submit"></button>
+</form>
+{{ end }}

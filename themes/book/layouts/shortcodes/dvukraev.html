@@ -1,0 +1,18 @@
+<div id="pamiat-dropbox" style="width: 100%; height: 540px;" ></div>
+
+<script>
+var options = {
+      // Shared link to Dropbox file
+      link: "https://www.dropbox.com/sh/uyzde4ar9jkrtni/AAB7z1urYiCmE_3UvY07Lc7xa?dl=0",
+      file: {
+        // Sets the zoom mode for embedded files. Defaults to 'best'
+        zoom: "best" // or "fit"
+      },
+      folder: {
+        view: "grid", // or "list"
+        headerSize: "small" // or "small"
+      }
+    };
+var element = document.getElementById ("pamiat-dropbox");	
+Dropbox.embed(options, element);
+</script>

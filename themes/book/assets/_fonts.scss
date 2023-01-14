@@ -1,0 +1,164 @@
+/* roboto-300italic - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Roboto Light Italic'), local('Roboto-LightItalic'),
+       url('fonts/roboto-v19-latin-300italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/roboto-v19-latin-300italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('fonts/roboto-v19-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/roboto-v19-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+       url('fonts/roboto-v19-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/roboto-v19-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-mono-regular - latin */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto Mono'), local('RobotoMono-Regular'),
+       url('fonts/roboto-mono-v6-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/roboto-mono-v6-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* VollkornSC-Regular */
+@font-face {
+    font-family: 'Vollkorn SC';
+    font-style: normal;
+	font-weight: normal;
+	font-display: swap;
+	src: local('VollkornSC Regular'), local('VollkornSC-Regular'),
+      url('fonts/VollkornSC-Regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('fonts/VollkornSC-Regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	  url('fonts/VollkornSC-Regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/VollkornSC-Regular.ttf') format('truetype'),
+      url('fonts/VollkornSC-Regular.svg') format('svg');
+}
+
+/* e-Ukraine Head */
+@font-face {
+    font-family:'e-Ukraine Head';
+    font-style: normal;
+	font-weight: normal;
+	font-display: swap;
+	src: local('e-Ukraine Head Regular'), local('e-Ukraine Head Regular'),
+	    url('fonts/e-Ukraine Head Regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/e-Ukraine Head Regular.woff2') format('woff2'),
+		url('fonts/e-Ukraine Head Regular.woff') format('woff'),
+		url('fonts/e-Ukraine Head Regular.ttf') format('truetype'),
+		url('fonts/e-Ukraine Head Regular.svg#e-Ukraine Head Regular') format('svg');
+}
+
+/* e-Ukraine UltraLight */
+@font-face {
+    font-family:'e-Ukraine UltraLight';
+    font-style: normal;
+	font-weight: normal;
+	font-display: swap;
+	src: local('e-Ukraine UltraLight'), local('e-Ukraine UltraLight'),
+	    url('fonts/e-Ukraine UltraLight.eot?#iefix') format('embedded-opentype'),
+		url('fonts/e-Ukraine UltraLight.woff2') format('woff2'),
+		url('fonts/e-Ukraine UltraLight.woff') format('woff'),
+		url('fonts/e-Ukraine UltraLight.ttf') format('truetype'),
+		url('fonts/e-Ukraine UltraLight.svg#e-Ukraine UltraLight') format('svg');
+}
+
+/* Montserrat-Regular */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+	font-weight: normal;
+	font-display: swap;
+	src: local('Montserrat Regular'), local('Montserrat-Regular'),
+      url('fonts/Montserrat-Regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('fonts/Montserrat-Regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	  url('fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/Montserrat-Regular.ttf') format('truetype'),
+      url('fonts/Montserrat-Regular.svg') format('svg');	  
+}
+
+/* Font Awesome */
+
+@font-face {
+    font-family: 'Font Awesome 5 Brands';
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src: url(fonts/fa-brands-400.eot);
+	src: url(fonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), 
+	     url(fonts/fa-brands-400.woff2) format("woff2"),
+		 url(fonts/fa-brands-400.woff) format("woff"),
+		 url(fonts/fa-brands-400.ttf) format("truetype"),
+		 url(fonts/fa-brands-400.svg#fontawesome) format("svg")
+}
+
+.fab {
+    font-family: 'Font Awesome 5 Brands'
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Free'; 
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src: url(fonts/fa-regular-400.eot);
+	src: url(fonts/fa-regular-400.eot?#iefix) format("embedded-opentype"),
+	     url(fonts/fa-regular-400.woff2) format("woff2"),
+		 url(fonts/fa-regular-400.woff) format("woff"),
+		 url(fonts/fa-regular-400.ttf) format("truetype"),
+		 url(fonts/fa-regular-400.svg#fontawesome) format("svg")
+}
+
+.fab,.far {
+    font-weight: 400
+}
+
+@font-face {
+     font-family: 'Font Awesome 5 Free';
+	 font-style: normal;
+	 font-weight: 900;
+	 font-display: block;
+	 src: url(fonts/fa-solid-900.eot);
+	 src: url(fonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),
+	      url(fonts/fa-solid-900.woff2) format("woff2"),
+		  url(fonts/fa-solid-900.woff) format("woff"),
+		  url(fonts/fa-solid-900.ttf) format("truetype"),
+		  url(fonts/fa-solid-900.svg#fontawesome) format("svg")
+}
+
+.fa,.far,.fas {
+     font-family: 'Font Awesome 5 Free'
+}
+
+.fa,.fas {
+     font-weight: 900
+}
+
+/* Font Awesome end */
+
+body {
+  font-family: 'e-Ukraine UltraLight';
+}
+
+code {
+  font-family: 'Roboto Mono', monospace;
+}

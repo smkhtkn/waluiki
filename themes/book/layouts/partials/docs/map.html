@@ -1,0 +1,171 @@
+<div class="map" id="valuyki" ></div>
+
+<script>
+ var LeafIcon = L.Icon.extend({
+    options: {
+        iconSize:     [28, 28],
+        iconAnchor:   [14, 14],
+        popupAnchor:  [0, 0]
+    }
+});
+
+var golodIcon = new LeafIcon({iconUrl: 'https://waluiki.ru/docs/topography/golod.png'}),
+    golod1Icon = new LeafIcon({iconUrl: 'https://waluiki.ru/docs/topography/golod1.png'}),
+    terrorIcon = new LeafIcon({iconUrl: 'https://waluiki.ru/docs/topography/terror.png'}),
+	symbolIcon = new LeafIcon({iconUrl: 'https://waluiki.ru/docs/topography/symbol.png'});
+
+	var golod = L.layerGroup();
+
+  L.marker([50.191313, 38.098701], {icon: golodIcon, title: "Валуйский маслозавод",
+                                                  }).addTo(golod).bindPopup('<h1>Валуйский маслозавод</h1> <img src="/static/img/golod/maslozavod-1943-1948.jpg" width="100%" height="100%" /> <p>Рассказывая об истории своей семьи, профессор ТГТУ Сергей Пономарев упоминает о голоде, затронувшем Валуйский район в первой половине 30-х годов. В числе прочего Пономарев отмечает, что люди питались жмыхом, отходом производства местного маслозавода.</p> <p><h3><a href="/docs/topography/maslozavod/">Читать далее</a> </h3></p>');
+  L.marker([50.150961, 38.001975], {icon: golodIcon, title: "Пристень",
+                                           }).addTo(golod).bindPopup('<h1>Коллективизация в Пристени</h1> <img src="/static/img/golod/pristen.jpg" width="100%" height="100%" /> <p>В сводках ОГПУ сообщалось, что во время коллективизации среди местных крестьян имели место бунтовщические настроения. Из-за недостатка хлеба крестьяне начали резать скот. По воспоминаниям крестьянки Полины Глотовой при раскулачивании у людей отбирали все имущество.</p> <p><h3><a href="/docs/topography/pristen/">Читать далее</a> </h3></p>');
+  L.marker([50.167650, 37.546458], {icon: golodIcon, title: "Зарубинка",
+                                             }).addTo(golod).bindPopup('<h1>Голод в Зарубинке</h1> <img src="/docs/topography/zarubinka/1.png" width="100%" height="100%" /> <p>Татьяна Андреевна Тимофеева родилась в 1925 году. Ее семья проживала в селе Зарубинка Великобурлуцкого района. В детстве Татьяна Андреевна пережила раскулачивание и тяжелый голод, в ходе которого погибли ее брат и сестра. Татьяне Андреевне удалось выжить благодаря тому, что она добралась до своей тети в соседней деревне. Ее отца репрессировали.</p> <p><h3><a href="/docs/topography/zarubinka/">Читать далее</a> </h3></p>');
+  L.marker([50.171941, 37.708205], {icon: golodIcon, title: "Елдыновка",
+                                             }).addTo(golod).bindPopup('<h1>Елдыновка</h1> <img src="/static/img/golod/eldynovka.jpg" width="100%" height="100%" /> <p>В 1931 году крестьяне хуторов Елдыновка I-я и II-я прятали зерно, не желая отдавать его государству.</p> <p><h3><a href="/docs/topography/eldynovka/">Читать далее</a> </h3></p>');
+  L.marker([50.24373, 37.99938], {icon: golodIcon, title: "Колосково",
+                                           }).addTo(golod).bindPopup('<h1>Голод в Колосково</h1> <img src="/static/img/golod/koloskovo.jpg" width="100%" height="100%" /> <p>10 апреля 1933 года чиновник докладывал о двух семьях в Колосково с истощенными и опухшими детьми и о втором случае смерти от голода.</p> <p><h3><a href="/docs/topography/koloskovo/">Читать далее</a> </h3></p>');
+  L.marker([50.31129, 37.92535], {icon: golodIcon, title: "Принцевка",
+                                            }).addTo(golod);
+  L.marker([50.31096, 38.14942], {icon: golodIcon, title: "Селиваново",
+                                            }).addTo(golod).bindPopup('<h1>Селиваново, 1930-1934</h1> <img src="/static/img/golod/pristen.jpg" width="100%" height="100%" /> <p>В 1930 году информатор ОГПУ рассказывает, что из-за недостатка хлеба крестьяне-середняки вынуждены продавать лошадей. В 1934 году отчаявшиеся колхозницы читают Евангелие в поле.</p> <p><h3><a href="/docs/topography/selivanovo/">Читать далее</a> </h3></p>');
+  L.marker([50.29773, 38.25038], {icon: golodIcon, title: "Мандрово",
+                                           }).addTo(golod).bindPopup('<h1>Мандрово в 1933 году</h1> <img src="/static/img/golod/mandrovo.jpg" width="100%" height="100%" /> <p>В колхозах Мандровского сельсовета голодали как добросовестно работающие крестьяне, так и семьи, находившиеся в зоне риска. Насчитывалось как минимум 10 хозяйств, испытывавших «острую продовольственную нужду».</p> <p><h3><a href="/docs/topography/mandrovo/">Читать далее</a> </h3></p>');
+  L.marker([50.244638, 37.832776], {icon: golodIcon, title: "Казинка",
+                                           }).addTo(golod).bindPopup('<h1>Положение в Казинке</h1> <img src="/docs/topography/kazinka/1.png" width="100%" height="100%" /> <p>О коллективизации и голоде в Казинке нам известно из подробных рассказов Клавдии Алексеевны Глущенко (Нечаевой), которые записал ее внук, московский краевед Александр Можаев. Он же сделал видеозапись с воспоминаниями бабушки.</p> <p><h3><a href="/docs/topography/kazinka/">Читать далее</a> </h3></p>');
+  L.marker([50.21512, 38.10018], {icon: golodIcon, title: "Валуйки",
+                                         }).addTo(golod).bindPopup('<h1>Голод среди красных партизан</h1> <img src="/static/img/golod/library.jpg" width="100%" height="100%" /> <p>В докладной записке от 20 июня 1933 года, касающейся красных партизан, сообщалось: «На месте в Валуйках они просили выдать им жмых, но получили отказ. По заявлению т. Хусточко в некоторых семьях партизан имеются смертные случаи от недоедания».</p> <p><h3><a href="/docs/topography/waluiki/">Читать далее</a> </h3></p>');
+  L.marker([50.08606, 38.04566], {icon: golodIcon, title: "Уразово",
+                                         }).addTo(golod);
+  L.marker([50.14085, 37.97741], {icon: golodIcon, title: "Сухарево",
+                                         }).addTo(golod).bindPopup('<h1>Письмо из Сухарево</h1> <img src="/static/img/golod/sukharevo.png" width="100%" height="100%" /> <p>«В с. Сухарево, Тирасполь, Валуйского р. крестьяне питаются травами, фруктами, которым не дают созреть и в зеленом виде съедают. По селам бродят нищие, голодные дети, брошенные родителями, валяются на улицах, даже трудно описывать весь тот ужас, который имеется на селе», — писали колхозники в газету «Известия».</p> <p><h3><a href="/docs/topography/sukharevo/">Читать далее</a> </h3></p>');
+  L.marker([50.33147, 38.23898], {icon: golodIcon, title: "Касеновка",
+                                           }).addTo(golod);
+  L.marker([50.206479, 38.025962], {icon: golodIcon, title: "Яблоново",
+                                             }).addTo(golod).bindPopup('<h1>Голод в Яблоново</h1> <img src="/docs/topography/yablonovo/yablonovo1.jpg" width="100%" height="100%" /> <p>Уроженец Яблоново, Андрей Тимофеевич Емельянов, вспоминает голод 1932-1933 годов и повседневную жизнь во время нацистской оккупации.</p> <p><h3><a href="/docs/topography/yablonovo/">Читать далее</a> </h3></p>');
+  L.marker([50.126853, 38.154547], {icon: golodIcon, title: "Ромашовка",
+                                             }).addTo(golod).bindPopup('<h1>Ромашовка</h1> <img src="/docs/topography/romashovka/misyurov1.jpg" width="100%" height="100%" /> <p>Уроженец хутора Ромашовка, Николай Стефанович Мисюров, вспоминает некоторые особенности коллективизации, голод 1932-1933 годов и то, как его односельчане восприняли смерть Сталина.</p> <p><h3><a href="/docs/topography/romashovka/">Читать далее</a> </h3></p>');
+  L.marker([50.013682, 38.676140], {icon: golodIcon, title: "Белый Колодезь",
+                                             }).addTo(golod).bindPopup('<h1>Белый Колодезь</h1> <img src="/static/img/golod/bkolodez.jpg" width="100%" height="100%" /> <p>В 1931 году крестьяне Бело-Колодезского сельсовета стали жертвами коллективизации, потому что не хотели отдавать зерно государству.</p> <p><h3><a href="/docs/topography/bkolodez/">Читать далее</a> </h3></p>');
+  L.marker([50.372731, 38.411903], {icon: golodIcon, title: "Никитовка",
+                                             }).addTo(golod).bindPopup('<h1>Никитовка</h1> <img src="/static/img/golod/nikitovka.jpg" width="100%" height="100%" /> <p>Для коллективизации были характерны исключительная жестокость государства по отношению к крестьянству и соответствующий по силе ответ со стороны угнетенных. Коллективизация в Никитовке не была исключением.</p> <p><h3><a href="/docs/topography/nikitovka/">Читать далее</a> </h3></p>');
+
+  	var golod1 = L.layerGroup();
+
+L.marker([50.21695, 38.09063], {icon: golod1Icon,
+                                     title: "Педагогический техникум",
+                                     }).addTo(golod1).bindPopup('<h1>Педагогическое училище</h1> <img src="/static/img/golod/ped.jpg" width="100%" height="100%" /> <p>В июне 1949 года учащиеся и преподаватели нескольких образовательных учреждений отправили в «Комсомольскую правду» письмо, в котором писали о голоде, охватившем Валуйки и окрестности. Они отчаялись найти поддержку у местных чиновников и решили, что им поможет огласка.</p> <p><h3><a href="/docs/topography/ped/">Читать далее</a> </h3></p>');
+L.marker([50.2007, 38.10529], {icon: golod1Icon,
+                                     title: "Школа №3",
+                                     }).addTo(golod1).bindPopup('<h1>Средняя школа №3</h1> <img src="/static/img/golod/sch3.jpg" width="100%" height="100%" /> <p>В 1946 году мальчик Анатолий Педаш учился в школе, известной сегодня как МОУ СОШ №3. У Толи были две сестры, и они погибли во время послевоенного голода. Самому Толе приходилось есть что угодно. Его подкармливала учительница, которая осталась в памяти Анатолия на всю последующую жизнь.</p> <p><h3><a href="/docs/topography/sch3/">Читать далее</a> </h3></p>');
+
+  var terror = L.layerGroup();
+
+sch1 = L.marker([50.21157, 38.10295], {icon: terrorIcon,
+                                      title: "Арест после снятия стенгазеты",
+                                      }).addTo(terror).bindPopup('<h1>Арест после снятия стенгазеты</h1> <img src="/static/img/terror/school.jpg" width="100%" height="100%" /> <p>История семьи тамбовского профессора С. В. Пономарева была связана с Валуйками. В мемуарах он рассказывает о своем дедушке, школьном учителе, который был арестован, после того как снял не понравившуюся ему стенгазету, а во время войны отказался сотрудничать с немцами.</p> <p><h3><a href="/docs/topography/arest/">Читать далее</a> </h3></p>');
+trudkolonia = L.marker([50.18362, 38.08356], {icon: terrorIcon,
+                                             title: "Трудовая колония",
+                                             }).addTo(terror);
+butyrki = L.marker([50.177102, 37.649204], {icon: terrorIcon,
+                                           title: "Бутырки",
+                                           }).addTo(terror).bindPopup('<h1>Сгоревшие в Бутырках</h1> <img src="/static/img/butyrki/etap1.jpg" width="100%" height="100%" /> <p>18 октября 1941 года в селе Бутырки загорелся сарай с заключенными, которые шли этапом из оккупированного Харькова под надзором НКВД. В ходе пожара погибли 149 человек, некоторых из которых мы сегодня можем назвать поименно.</p> <p><h3><a href="/docs/topography/butyrki/">Читать далее</a> </h3></p>');
+nasonovo = L.marker([50.249988, 38.222527], {icon: terrorIcon,
+                                            title: "Насоново",
+                                            }).addTo(terror).bindPopup('<h1>Родион Скалецкий <br/>в Насоново</h1> <img src="/static/img/skaletskiy/letter.jpg" width="100%" height="100%" /> <p>В 1933 году в Валуйской район за «контрреволюционную» деятельность был сослан украинский композитор Родион Скалецкий. С 1933 по 1934 год он был директором в семиклассной школе крестьянской молодежи в Насоново.</p> <p><h3><a href="/docs/topography/skaletsky/">Читать далее</a> </h3></p>');
+monastyr = L.marker([50.178853, 38.074861], {icon: terrorIcon,
+                                           title: "Расстрел монахов",
+                                           }).addTo(terror).bindPopup('<h1>Расстрел монахов</h1> <img src="/static/img/papers/yug14.jpg" width="100%" height="100%" /> <p>В декабре 1918 года в газете «Южный край» сообщалось о красном терроре на занятых коммунистами территориях. В том числе, упоминался факт расстрела четырнадцати монахов в валуйском монастыре.</p> <p><h3><a href="/docs/papers/yug12/">Читать далее</a> </h3></p>');
+
+	var symbol = L.layerGroup();
+
+valuykilenin = L.marker([50.211787, 38.100665], {icon: symbolIcon,
+                                      title: "Памятник Ленину",
+                                      }).addTo(symbol).bindPopup('<h1>Памятник Ленину</h1> <img src="/static/img/symbols/valuyki1.jpg" width="100%" height="100%" /> <p>В Валуйках памятник Ленину находится в парке напротив здания местной администрации и рядом с детской площадкой.</p> <p><h3><a href="/docs/topography/lenin/#памятник-ленину-в-валуйках">Читать далее</a> </h3></p>');
+dvulutshnoye = L.marker([50.043369, 38.017403], {icon: symbolIcon,
+                                      title: "Памятник Ленину",
+                                      }).addTo(symbol).bindPopup('<h1>Памятник Ленину</h1> <img src="/static/img/symbols/dvulutshnoye1.jpg" width="100%" height="100%" /> <p>В селе Двулучное памятник Ленину расположен в сквере, прилегающем к зданию местной администрации, и соседствует с детской площадкой.</p> <p><h3><a href="/docs/topography/lenin/#памятник-ленину-в-двулучном">Читать далее</a> </h3></p>');
+gerasimovka = L.marker([50.041214, 38.145853], {icon: symbolIcon,
+                                      title: "Памятник Ленину",
+                                      }).addTo(symbol).bindPopup('<h1>Памятник Ленину</h1> <img src="/static/img/symbols/gerasimovka1.jpg" width="100%" height="100%" /> <p>В селе Герасимовка памятник Ленину расположен в сквере рядом с отделением Сбербанка, почтой и детской площадкой.</p> <p><h3><a href="/docs/topography/lenin/#памятник-ленину-в-герасимовке">Читать далее</a> </h3></p>');
+kazinkalenin = L.marker([50.238735, 37.840765], {icon: symbolIcon,
+                                      title: "Памятник Ленину",
+                                      }).addTo(symbol).bindPopup('<h1>Памятник Ленину</h1> <img src="/static/img/symbols/kazinka1.jpg" width="100%" height="100%" /> <p>Памятник в Казинке, вероятно, расположен около местного сельского Дома культуры. К сожалению, нам неизвестно, в каком состоянии он сейчас находится</p> <p><h3><a href="/docs/topography/lenin/#памятник-ленину-в-казинке">Читать далее</a> </h3></p>');
+urazowolenin = L.marker([50.080024, 38.038456], {icon: symbolIcon,
+                                      title: "Памятник Ленину",
+                                      }).addTo(symbol).bindPopup('<h1>Памятник Ленину</h1> <img src="/static/img/symbols/urazowo1.jpg" width="100%" height="100%" /> <p>Бюст Владимира Ленина в поселке Уразово установлен на улице 9 января, рядом с краеведческим музеем. Бюст был поставлен в 2011 году, но нам неизвестно, по чьему поручению это было сделано.</p> <p><h3><a href="/docs/topography/lenin/#памятник-ленину-в-уразово">Читать далее</a> </h3></p>');
+
+vokzal = L.marker([50.199516, 38.120639], {icon: symbolIcon,
+                                      title: "Серп и молот на здании вокзала",
+                                      }).addTo(symbol).bindPopup('<h1>Серп и молот на здании вокзала</h1> <img src="/static/img/symbols/vokzal1.jpg" width="100%" height="100%" /> <p>На фасаде здания пассажирского вокзала, в сандриках над окнами есть два барельефа с серпом и молотом.</p> <p><h3><a href="/docs/topography/symbols/#серп-и-молот-на-здании-вокзала">Читать далее</a> </h3></p>');
+rozhdestveno = L.marker([50.230352, 38.181884], {icon: symbolIcon,
+                                      title: "Памятник погибшим в ВМВ",
+                                      }).addTo(symbol).bindPopup('<h1>Памятник погибшим в ВМВ</h1> <img src="/static/img/symbols/rozhdestveno1.jpg" width="100%" height="100%" /> <p>На памятнике погибшим во Второй мировой войне, установленном в селе Рождествено, есть звезда, серп и молот, являющиеся символами коммунистического режима.</p> <p><h3><a href="/docs/topography/symbols/#советские-символы-на-памятнике-в-рождествено">Читать далее</a> </h3></p>');
+kazinkasymbols = L.marker([50.239375, 37.839905], {icon: symbolIcon,
+                                      title: "Серп и молот в Казинке",
+                                      }).addTo(symbol).bindPopup('<h1>Серп и молот в Казинке</h1> <img src="/static/img/symbols/kazinka2.jpg" width="100%" height="100%" /> <p>На углу здания, в котором располагается территориальная администрация Казинки, мы можем увидеть выложенные мозаикой серп и молот.</p> <p><h3><a href="/docs/topography/symbols/#серп-и-молот-в-казинке">Читать далее</a> </h3></p>');
+domsvyazi = L.marker([50.210609, 38.099552], {icon: symbolIcon,
+                                      title: "Герб СССР на «Доме связи»",
+                                      }).addTo(symbol).bindPopup('<h1>Герб СССР на «Доме связи»</h1> <img src="/static/img/symbols/dom1.jpg" width="100%" height="100%" /> <p>На фасаде «Дома связи» в Валуйках до сих пор присутствует герб СССР с серпом и молотом.</p> <p><h3><a href="/docs/topography/symbols/#герб-ссср-на-фасаде-дома-связи">Читать далее</a> </h3></p>');
+
+                                      vatutinvaluiki = L.marker([50.216404, 38.090601], {icon: symbolIcon,
+																			                                      title: "Мемориальная доска Ватутину",
+																			                                      }).addTo(symbol).bindPopup('<h1>Мемориальная доска Ватутину</h1> <img src="/static/img/symbols/vatutin-valuiki3small.jpg" width="100%" height="100%" /> <p>Мемориальная доска в память о Николае Ватутине на здании Валуйского педагогического училища.</p> <p><h3><a href="/docs/topography/vatutin/#мемориальная-доска-ватутину-в-валуйках">Читать далее</a> </h3></p>');
+																			vatutinurazowo = L.marker([50.078380, 38.045346], {icon: symbolIcon,
+																			                                      title: "Мемориальная доска Ватутину",
+																			                                      }).addTo(symbol).bindPopup('<h1>Мемориальная доска Ватутину</h1> <img src="/static/img/symbols/vatutin-urazowosmall.jpg" width="100%" height="100%" /> <p>Мемориальная доска на здании гимназии в Уразово, где учился большевистский генерал Николай Ватутин.</p> <p><h3><a href="/docs/topography/vatutin/#мемориальная-доска-ватутину-в-уразово">Читать далее</a> </h3></p>');
+																			vatutinvaluiki1 = L.marker([50.199907, 38.120038], {icon: symbolIcon,
+																			                                      title: "Бюст Ватутина",
+																			                                      }).addTo(symbol).bindPopup('<h1>Бюст Ватутина</h1> <img src="/static/img/symbols/vatutin-valuiki1small.jpg" width="100%" height="100%" /> <p>Бюст большевистского генерала Николая Ватутина на оживленной привокзальной площади в Валуйках.</p> <p><h3><a href="/docs/topography/vatutin/#бюст-ватутина-на-привокзальной-площади-в-валуйках">Читать далее</a> </h3></p>');
+																			vatutinvaluiki2 = L.marker([50.218105, 38.108680], {icon: symbolIcon,
+																			                                      title: "Бюст Ватутина и улица Ватутина",
+																			                                      }).addTo(symbol).bindPopup('<h1>Бюст Ватутина и улица Ватутина</h1> <img src="/static/img/symbols/vatutin-valuiki2small.jpg" width="100%" height="100%" /> <p>В северной части города бюст Николая Ватутина окружен со всех сторон улицей Николая Ватутина. Преданность генералу, который не считался с жизнями солдат, поражает воображение.</p> <p><h3><a href="/docs/topography/vatutin/#бюст-ватутина-и-улица-ватутина-на-севере-валуек">Читать далее</a> </h3></p>');
+																			vatutinvaluiki3 = L.marker([50.226011, 38.070982], {icon: symbolIcon,
+																			                                      title: "Бюст Ватутина",
+																			                                      }).addTo(symbol).bindPopup('<h1>Бюст Ватутина</h1> <img src="/static/img/symbols/vatutin-valuiki4small.jpg" width="100%" height="100%" /> <p>Типичный бюст большевистского генерала Ватутина в Западном переулке на севере города, одна из составляющих милитаристского культа Валуек.</p> <p><h3><a href="/docs/topography/vatutin/#бюст-ватутина-в-западном-переулке-в-валуйках">Читать далее</a> </h3></p>');
+																			vatutinvaluiki4 = L.marker([50.270778, 38.024313], {icon: symbolIcon,
+																			                                      title: "Бюст Ватутина",
+																			                                      }).addTo(symbol).bindPopup('<h1>Бюст Ватутина</h1> <img src="/static/img/symbols/vatutin-valuiki6small.jpg" width="100%" height="100%" /> <p>Бюст Ватутина в оккупационной военной части в селе Солоти.</p> <p><h3><a href="/docs/topography/vatutin/#бюст-ватутина-в-оккупационной-военной-части">Читать далее</a> </h3></p>');
+																			vatutinvaluiki5 = L.marker([50.174226, 38.125253], {icon: symbolIcon,
+																			                                      title: "Граффити с Ватутиным",
+																			                                      }).addTo(symbol).bindPopup('<h1>Граффити с Ватутиным</h1> <img src="/static/img/symbols/vatutin-valuiki5.jpg" width="100%" height="100%" /> <p>Граффити в честь кровавого большевистского генерала на улице Пархоменко в Валуйках.</p> <p><h3><a href="/docs/topography/vatutin/#граффити-с-ватутиным-на-улице-пархоменко-в-валуйках">Читать далее</a> </h3></p>');
+																			vatutindom = L.marker([50.285980, 38.307868], {icon: symbolIcon,
+																			                                      title: "Дом-музей Ватутина в Ватутино",
+																			                                      }).addTo(symbol).bindPopup('<h1>Дом-музей Ватутина в Ватутино</h1> <img src="/static/img/symbols/vatutin-domsmall.jpg" width="100%" height="100%" /> <p>Главным местом культа Николая Ватутина остается его дом-музей в селе Ватутино, где прославляется война.</p> <p><h3><a href="/docs/topography/vatutin/#дом-музей-николая-ватутина-в-селе-ватутино">Читать далее</a> </h3></p>');
+																			vatutinulitsa = L.marker([50.081475, 38.054117], {icon: symbolIcon,
+																			                                      title: "Улица Ватутина",
+																			                                      }).addTo(symbol).bindPopup('<h1>Улица Ватутина</h1> <img src="/static/img/symbols/vatutin-ulitsasmall.png" width="100%" height="100%" /> <p>Улица, названная в честь Николая Ватутина, располагается недалеко от железнодорожного вокзала Уразово.</p> <p><h3><a href="/docs/topography/vatutin/#улица-ватутина-в-уразово">Читать далее</a> </h3></p>');
+
+	var mbAttr = '<a href="https://www.waluiki.ru/">Общество «Обретенная память»</a> | ' +
+	        '© <a href="https://www.openstreetmap.org/">OpenStreetMap</a>, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'© <a href="https://www.mapbox.com/">Mapbox</a>',
+		mbUrl = 'https://api.mapbox.com/styles/v1/sameaukheautaiquine/ckhg0h2rk0gjg19mstpffne47/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoic2FtZWF1a2hlYXV0YWlxdWluZSIsImEiOiJja2hmem8ybWIwOXI5MnhwOTA2cjdraWQzIn0.k8npsD9OHNuK3QoBkj9QvA';
+
+	var karta   = L.tileLayer(mbUrl, {id: 'ckhg1jmu90h7m19mwd9err32d', tileSize: 512, zoomOffset: -1, attribution: mbAttr}),
+		sputnik  = L.tileLayer(mbUrl, {id: 'ckhrp3uyj265l19mtruizthm0', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+
+	var map = L.map('valuyki', {
+		center: [50.149, 38.067],
+		zoom: 10,
+        minZoom: 8,
+  	    maxZoom: 15,
+  	    tap: false,
+		layers: [karta, golod, terror, golod1, symbol]
+	});
+
+	var baseLayers = {
+		"Карта": karta,
+		"Спутник": sputnik
+	};
+
+	var overlays = {
+	"Голод 1932-1933 годов и коллективизация": golod,
+    "Послевоенный голод": golod1,
+	"Государственный террор": terror,
+    "Символы московского большевизма": symbol
+	};
+
+	L.control.layers(baseLayers, overlays).addTo(map);
+</script>

@@ -1,0 +1,95 @@
+	var symbol = L.layerGroup();
+
+dzerzhinsky = L.marker([50.178249, 38.121171], {icon: symbolIcon,
+                                      title: "Улица Феликса Дзержинского",
+                                      }).addTo(symbol).bindPopup('<h1>Улица Феликса Дзержинского</h1> <img src="/static/img/symbols/dzerzhinsky1.jpg" width="100%" height="100%" /> <p>На фасаде здания пассажирского вокзала, в сандриках над окнами есть два барельефа с серпом и молотом.</p> <p><h3><a href="/docs/topography/arest/">Читать далее</a> </h3></p>');
+furmanov = L.marker([50.176336, 38.122470], {icon: symbolIcon,
+                                      title: "Улица Дмитрия Фурманова",
+                                      }).addTo(symbol).bindPopup('<h1>Улица Дмитрия Фурманова</h1> <img src="/static/img/symbols/furmanov1.jpg" width="100%" height="100%" /> <p>На фасаде здания пассажирского вокзала, в сандриках над окнами есть два барельефа с серпом и молотом.</p> <p><h3><a href="/docs/topography/arest/">Читать далее</a> </h3></p>');
+kotovsky = L.marker([50.176453, 38.124470], {icon: symbolIcon,
+                                      title: "Улица Григория Котовского",
+                                      }).addTo(symbol).bindPopup('<h1>Улица Григория Котовского</h1> <img src="/static/img/symbols/furmanov1.jpg" width="100%" height="100%" /> <p>На фасаде здания пассажирского вокзала, в сандриках над окнами есть два барельефа с серпом и молотом.</p> <p><h3><a href="/docs/topography/arest/">Читать далее</a> </h3></p>');
+schors = L.marker([50.180168, 38.129070], {icon: symbolIcon,
+                                      title: "Улица Николая Щорса",
+                                      }).addTo(symbol).bindPopup('<h1>Улица Николая Щорса</h1> <img src="/static/img/symbols/furmanov1.jpg" width="100%" height="100%" /> <p>На фасаде здания пассажирского вокзала, в сандриках над окнами есть два барельефа с серпом и молотом.</p> <p><h3><a href="/docs/topography/arest/">Читать далее</a> </h3></p>');
+kuybishev = L.marker([50.181855, 38.103433], {icon: symbolIcon,
+                                      title: "Улица Валериана Куйбышева",
+                                      }).addTo(symbol).bindPopup('<h1>Улица Валериана Куйбышева</h1> <img src="/static/img/symbols/furmanov1.jpg" width="100%" height="100%" /> <p>На фасаде здания пассажирского вокзала, в сандриках над окнами есть два барельефа с серпом и молотом.</p> <p><h3><a href="/docs/topography/arest/">Читать далее</a> </h3></p>');
+gorky = L.marker([50.224562, 38.076571], {icon: symbolIcon,
+                                      title: "Улица Максима Горького",
+                                      }).addTo(symbol).bindPopup('<h1>Улица Максима Горького</h1> <img src="/static/img/symbols/furmanov1.jpg" width="100%" height="100%" /> <p>На фасаде здания пассажирского вокзала, в сандриках над окнами есть два барельефа с серпом и молотом.</p> <p><h3><a href="/docs/topography/arest/">Читать далее</a> </h3></p>');
+kommunist = L.marker([50.202737, 38.111234], {icon: symbolIcon,
+                                      title: "Улица Коммунистическая",
+                                      }).addTo(symbol).bindPopup('<h1>Улица Коммунистическая</h1> <img src="/static/img/symbols/furmanov1.jpg" width="100%" height="100%" /> <p>Улица, названная в честь преступной идеологии, приведшей к многомиллионным жертвам в XX веке, прежде носила имя диктатора Сталина, но сменила его во время десталинизации, запущенной Никитой Хрущевым.</p> <p><h3><a href="/docs/topography/arest/">Читать далее</a> </h3></p>');
+kirov = L.marker([50.197591, 38.109930], {icon: symbolIcon,
+                                      title: "Улица Сергея Кирова",
+                                      }).addTo(symbol).bindPopup('<h1>Улица Сергея Кирова</h1> <img src="/static/img/symbols/furmanov1.jpg" width="100%" height="100%" /> <p>Улица, названная в честь преступной идеологии, приведшей к многомиллионным жертвам в XX веке, прежде носила имя диктатора Сталина, но сменила его во время десталинизации, запущенной Никитой Хрущевым.</p> <p><h3><a href="/docs/topography/arest/">Читать далее</a> </h3></p>');
+sverdlov = L.marker([50.211999, 38.096568], {icon: symbolIcon,
+                                      title: "Улица Якова Свердлова",
+                                      }).addTo(symbol).bindPopup('<h1>Улица Якова Свердлова</h1> <img src="/static/img/symbols/furmanov1.jpg" width="100%" height="100%" /> <p>Улица, названная в честь преступной идеологии, приведшей к многомиллионным жертвам в XX веке, прежде носила имя диктатора Сталина, но сменила его во время десталинизации, запущенной Никитой Хрущевым.</p> <p><h3><a href="/docs/topography/arest/">Читать далее</a> </h3></p>');
+uritsky = L.marker([50.210009, 38.118436], {icon: symbolIcon,
+                                      title: "Площадь Моисея Урицкого",
+                                      }).addTo(symbol).bindPopup('<h1>Площадь Моисея Урицкого</h1> <img src="/static/img/symbols/furmanov1.jpg" width="100%" height="100%" /> <p>Улица, названная в честь преступной идеологии, приведшей к многомиллионным жертвам в XX веке, прежде носила имя диктатора Сталина, но сменила его во время десталинизации, запущенной Никитой Хрущевым.</p> <p><h3><a href="/docs/topography/arest/">Читать далее</a> </h3></p>');
+
+
+
+
+
+
+
+vatutin-valuiki = L.marker([50.216404, 38.090601], {icon: symbolIcon,
+                                      title: "Мемориальная доска Ватутину",
+                                      }).addTo(symbol).bindPopup('<h1>Мемориальная доска Ватутину</h1> <img src="/static/img/symbols/vatutin-valuiki3small.jpg" width="100%" height="100%" /> <p>Мемориальная доска в память о Николае Ватутине на здании Валуйского педагогического училища.</p> <p><h3><a href="/docs/topography/vatutin/#мемориальная-доска-ватутину-в-валуйках">Читать далее</a> </h3></p>');
+vatutin-urazowo = L.marker([50.078380, 38.045346], {icon: symbolIcon,
+                                      title: "Мемориальная доска Ватутину",
+                                      }).addTo(symbol).bindPopup('<h1>Мемориальная доска Ватутину</h1> <img src="/static/img/symbols/vatutin-urazowosmall.jpg" width="100%" height="100%" /> <p>Мемориальная доска на здании гимназии в Уразово, где учился большевистский генерал Николай Ватутин.</p> <p><h3><a href="/docs/topography/vatutin/#мемориальная-доска-ватутину-в-уразово">Читать далее</a> </h3></p>');
+vatutin-valuiki1 = L.marker([50.199907, 38.120038], {icon: symbolIcon,
+                                      title: "Бюст Ватутина",
+                                      }).addTo(symbol).bindPopup('<h1>Бюст Ватутина</h1> <img src="/static/img/symbols/vatutin-valuiki1small.jpg" width="100%" height="100%" /> <p>Бюст большевистского генерала Николая Ватутина на оживленной привокзальной площади в Валуйках.</p> <p><h3><a href="/docs/topography/vatutin/#бюст-ватутина-на-привокзальной-площади-в-валуйках">Читать далее</a> </h3></p>');
+vatutin-valuiki2 = L.marker([50.218105, 38.108680], {icon: symbolIcon,
+                                      title: "Бюст Ватутина и улица Ватутина",
+                                      }).addTo(symbol).bindPopup('<h1>Бюст Ватутина и улица Ватутина</h1> <img src="/static/img/symbols/vatutin-valuiki2small.jpg" width="100%" height="100%" /> <p>В северной части города бюст Николая Ватутина окружен со всех сторон улицей Николая Ватутина. Преданность генералу, который не считался с жизнями солдат, поражает воображение.</p> <p><h3><a href="/docs/topography/vatutin/#бюст-ватутина-и-улица-ватутина-на-севере-валуек">Читать далее</a> </h3></p>');
+vatutin-valuiki3 = L.marker([50.226011, 38.070982], {icon: symbolIcon,
+                                      title: "Бюст Ватутина",
+                                      }).addTo(symbol).bindPopup('<h1>Бюст Ватутина</h1> <img src="/static/img/symbols/vatutin-valuiki4small.jpg" width="100%" height="100%" /> <p>Типичный бюст большевистского генерала Ватутина в Западном переулке на севере города, одна из составляющих милитаристского культа Валуек.</p> <p><h3><a href="/docs/topography/vatutin/#бюст-ватутина-в-западном-переулке-в-валуйках">Читать далее</a> </h3></p>');
+vatutin-valuiki4 = L.marker([50.270778, 38.024313], {icon: symbolIcon,
+                                      title: "Бюст Ватутина",
+                                      }).addTo(symbol).bindPopup('<h1>Бюст Ватутина</h1> <img src="/static/img/symbols/vatutin-valuiki6small.jpg" width="100%" height="100%" /> <p>Бюст Ватутина в оккупационной военной части в селе Солоти.</p> <p><h3><a href="/docs/topography/vatutin/#бюст-ватутина-в-оккупационной-военной-части">Читать далее</a> </h3></p>');
+vatutin-valuiki5 = L.marker([50.174226, 38.125253], {icon: symbolIcon,
+                                      title: "Граффити с Ватутиным",
+                                      }).addTo(symbol).bindPopup('<h1>Граффити с Ватутиным</h1> <img src="/static/img/symbols/vatutin-valuiki5.jpg" width="100%" height="100%" /> <p>Граффити в честь кровавого большевистского генерала на улице Пархоменко в Валуйках.</p> <p><h3><a href="/docs/topography/vatutin/#граффити-с-ватутиным-на-улице-пархоменко-в-валуйках">Читать далее</a> </h3></p>');
+vatutin-dom = L.marker([50.285980, 38.307868], {icon: symbolIcon,
+                                      title: "Дом-музей Ватутина в Ватутино",
+                                      }).addTo(symbol).bindPopup('<h1>Дом-музей Ватутина в Ватутино</h1> <img src="/static/img/symbols/vatutin-domsmall.jpg" width="100%" height="100%" /> <p>Главным местом культа Николая Ватутина остается его дом-музей в селе Ватутино, где прославляется война.</p> <p><h3><a href="/docs/topography/vatutin/#дом-музей-николая-ватутина-в-селе-ватутино">Читать далее</a> </h3></p>');
+vatutin-ulitsa = L.marker([50.081475, 38.054117], {icon: symbolIcon,
+                                      title: "Улица Ватутина",
+                                      }).addTo(symbol).bindPopup('<h1>Улица Ватутина</h1> <img src="/static/img/symbols/vatutin-ulitsasmall.png" width="100%" height="100%" /> <p>Улица, названная в честь Николая Ватутина, располагается недалеко от железнодорожного вокзала Уразово.</p> <p><h3><a href="/docs/topography/vatutin/#улица-ватутина-в-уразово">Читать далее</a> </h3></p>');
+
+
+																			vatutinvaluiki = L.marker([50.216404, 38.090601], {icon: symbolIcon,
+																			                                      title: "Мемориальная доска Ватутину",
+																			                                      }).addTo(symbol).bindPopup('<h1>Мемориальная доска Ватутину</h1> <img src="/static/img/symbols/vatutin-valuiki3small.jpg" width="100%" height="100%" /> <p>Мемориальная доска в память о Николае Ватутине на здании Валуйского педагогического училища.</p> <p><h3><a href="/docs/topography/vatutin/#мемориальная-доска-ватутину-в-валуйках">Читать далее</a> </h3></p>');
+																			vatutinurazowo = L.marker([50.078380, 38.045346], {icon: symbolIcon,
+																			                                      title: "Мемориальная доска Ватутину",
+																			                                      }).addTo(symbol).bindPopup('<h1>Мемориальная доска Ватутину</h1> <img src="/static/img/symbols/vatutin-urazowosmall.jpg" width="100%" height="100%" /> <p>Мемориальная доска на здании гимназии в Уразово, где учился большевистский генерал Николай Ватутин.</p> <p><h3><a href="/docs/topography/vatutin/#мемориальная-доска-ватутину-в-уразово">Читать далее</a> </h3></p>');
+																			vatutinvaluiki1 = L.marker([50.199907, 38.120038], {icon: symbolIcon,
+																			                                      title: "Бюст Ватутина",
+																			                                      }).addTo(symbol).bindPopup('<h1>Бюст Ватутина</h1> <img src="/static/img/symbols/vatutin-valuiki1small.jpg" width="100%" height="100%" /> <p>Бюст большевистского генерала Николая Ватутина на оживленной привокзальной площади в Валуйках.</p> <p><h3><a href="/docs/topography/vatutin/#бюст-ватутина-на-привокзальной-площади-в-валуйках">Читать далее</a> </h3></p>');
+																			vatutinvaluiki2 = L.marker([50.218105, 38.108680], {icon: symbolIcon,
+																			                                      title: "Бюст Ватутина и улица Ватутина",
+																			                                      }).addTo(symbol).bindPopup('<h1>Бюст Ватутина и улица Ватутина</h1> <img src="/static/img/symbols/vatutin-valuiki2small.jpg" width="100%" height="100%" /> <p>В северной части города бюст Николая Ватутина окружен со всех сторон улицей Николая Ватутина. Преданность генералу, который не считался с жизнями солдат, поражает воображение.</p> <p><h3><a href="/docs/topography/vatutin/#бюст-ватутина-и-улица-ватутина-на-севере-валуек">Читать далее</a> </h3></p>');
+																			vatutinvaluiki3 = L.marker([50.226011, 38.070982], {icon: symbolIcon,
+																			                                      title: "Бюст Ватутина",
+																			                                      }).addTo(symbol).bindPopup('<h1>Бюст Ватутина</h1> <img src="/static/img/symbols/vatutin-valuiki4small.jpg" width="100%" height="100%" /> <p>Типичный бюст большевистского генерала Ватутина в Западном переулке на севере города, одна из составляющих милитаристского культа Валуек.</p> <p><h3><a href="/docs/topography/vatutin/#бюст-ватутина-в-западном-переулке-в-валуйках">Читать далее</a> </h3></p>');
+																			vatutinvaluiki4 = L.marker([50.270778, 38.024313], {icon: symbolIcon,
+																			                                      title: "Бюст Ватутина",
+																			                                      }).addTo(symbol).bindPopup('<h1>Бюст Ватутина</h1> <img src="/static/img/symbols/vatutin-valuiki6small.jpg" width="100%" height="100%" /> <p>Бюст Ватутина в оккупационной военной части в селе Солоти.</p> <p><h3><a href="/docs/topography/vatutin/#бюст-ватутина-в-оккупационной-военной-части">Читать далее</a> </h3></p>');
+																			vatutinvaluiki5 = L.marker([50.174226, 38.125253], {icon: symbolIcon,
+																			                                      title: "Граффити с Ватутиным",
+																			                                      }).addTo(symbol).bindPopup('<h1>Граффити с Ватутиным</h1> <img src="/static/img/symbols/vatutin-valuiki5.jpg" width="100%" height="100%" /> <p>Граффити в честь кровавого большевистского генерала на улице Пархоменко в Валуйках.</p> <p><h3><a href="/docs/topography/vatutin/#граффити-с-ватутиным-на-улице-пархоменко-в-валуйках">Читать далее</a> </h3></p>');
+																			vatutindom = L.marker([50.285980, 38.307868], {icon: symbolIcon,
+																			                                      title: "Дом-музей Ватутина в Ватутино",
+																			                                      }).addTo(symbol).bindPopup('<h1>Дом-музей Ватутина в Ватутино</h1> <img src="/static/img/symbols/vatutin-domsmall.jpg" width="100%" height="100%" /> <p>Главным местом культа Николая Ватутина остается его дом-музей в селе Ватутино, где прославляется война.</p> <p><h3><a href="/docs/topography/vatutin/#дом-музей-николая-ватутина-в-селе-ватутино">Читать далее</a> </h3></p>');
+																			vatutinulitsa = L.marker([50.081475, 38.054117], {icon: symbolIcon,
+																			                                      title: "Улица Ватутина",
+																			                                      }).addTo(symbol).bindPopup('<h1>Улица Ватутина</h1> <img src="/static/img/symbols/vatutin-ulitsasmall.png" width="100%" height="100%" /> <p>Улица, названная в честь Николая Ватутина, располагается недалеко от железнодорожного вокзала Уразово.</p> <p><h3><a href="/docs/topography/vatutin/#улица-ватутина-в-уразово">Читать далее</a> </h3></p>');
